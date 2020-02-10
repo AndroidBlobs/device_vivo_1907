@@ -16,6 +16,7 @@ vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiosetting.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaudio_param_parser-vnd.so
+vendor/lib/libtinycompress.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
@@ -29,6 +30,7 @@ vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiosetting.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaudio_param_parser-vnd.so
+vendor/lib64/libtinycompress.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
@@ -255,8 +257,6 @@ vendor/lib64/hw/memtrack.mt6768.so
 vendor/bin/hw/vendor.vivo.hardware.biometrics.analysis@1.0-service
 vendor/bin/hw/vendor.vivo.hardware.biometrics.fingerprint@2.1-service-et713
 vendor/bin/hw/vendor.vivo.hardware.biometrics.fingerprint@2.1-service-gf9518
-vendor/bin/init.vivo.fingerprint.sh
-vendor/bin/init.vivo.fingerprint_restart_counter.sh
 vendor/etc/init/init.vivo.fingerprint.rc
 vendor/etc/init/vendor.vivo.hardware.biometrics.analysis@1.0-service.rc
 vendor/etc/init/vendor.vivo.hardware.biometrics.fingerprint@2.1-service-et713.rc
@@ -337,20 +337,6 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/libOpenCL.so
-
-# Kernel-Modules
-boot/ramdisk/vendor/lib/modules/wlan_drv_gen4m.ko
-boot/ramdisk/vendor/lib/modules/wmt_chrdev_wifi.ko
-boot/ramdisk/vendor/lib/modules/wmt_drv.ko
-vendor/lib/modules/bt_drv.ko
-vendor/lib/modules/fmradio_drv.ko
-vendor/lib/modules/fpsgo.ko
-vendor/lib/modules/gps_drv.ko
-vendor/lib/modules/met.ko
-vendor/lib/modules/udc_lib.ko
-vendor/lib/modules/wlan_drv_gen4m.ko
-vendor/lib/modules/wmt_chrdev_wifi.ko
-vendor/lib/modules/wmt_drv.ko
 
 # Keymaster
 boot/ramdisk/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
@@ -632,7 +618,6 @@ etc/nfcee_access.xml
 etc/permissions/com.nxp.nfc.xml
 framework/com.nxp.nfc.jar
 vendor/bin/hw/android.hardware.nfc@1.1-service
-vendor/bin/init.vivo.nfc.sh
 vendor/etc/init/android.hardware.nfc@1.1-service.rc
 vendor/etc/init/init.full_k68v1_64.nfc.rc
 vendor/etc/init/init.vivo.nfc.rc
@@ -696,12 +681,12 @@ vendor/etc/init/init.thermal.rc
 vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/init/init.thermal_manager.rc
 vendor/lib/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib/hw/thermal.mt6768.so
 vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib64/hw/thermal.mt6768.so
 
 # Thermal-Hardware
+vendor/lib/hw/thermal.mt6768.so
+vendor/lib64/hw/thermal.mt6768.so
 
 # Time
 
@@ -724,7 +709,6 @@ vendor/bin/hw/vendor.vivo.hardware.omnipotentservice@1.0-service
 vendor/bin/hw/vendor.vivo.hardware.sectee@1.0-service
 vendor/bin/hw/vendor.vivo.hardware.sensorfactory@1.0-service
 vendor/bin/hw/vendor.vivo.hardware.vdtf@1.0-service
-vendor/bin/init.vivo.crashdata.sh
 vendor/bin/vendor.vivo.hardware.frameworkmessager@1.0-test
 vendor/bin/vivo_defend
 vendor/bin/vivo_em_svr
